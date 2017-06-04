@@ -1,0 +1,35 @@
+
+body { margin: 0; padding: 0; font-family: 'Arial', sans-serif; }
+
+table { border-collapse: collapse;}
+strong { font-weight: bold; }
+a { text-decoration: none; }
+p { text-indent: 25px; margin-bottom: 10px; }
+
+.top > td { height: 58px; border-top: 6px solid #092f44; padding-left: 10px; padding-right: 10px;}
+.top_phone { color: #092f44; font-size: 24px; font-family: 'PT Sans', sans-serif; }
+.h1 > td { height: 72px; vertical-align: middle; padding-left: 10px; padding-right: 10px; background-color: #0073ac; }
+.h1 h1 { font-size: 22px; color: #fff; text-transform: uppercase; font-weight: 300;}
+
+
+.main_top > td,
+.main_bottom > td { background-color: #ebebeb; padding-left: 10px; padding-right: 10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
