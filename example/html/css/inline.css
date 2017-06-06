@@ -1,34 +1,101 @@
 
-body { margin: 0; padding: 0; font-family: 'Arial', sans-serif; }
+body { margin: 0; padding: 0; font-family: 'Arial', sans-serif;  font-size: 14px;}
 
 table { border-collapse: collapse;}
 strong { font-weight: bold; }
+em { font-style: italic;}
 a { text-decoration: none; }
-p { text-indent: 25px; margin-bottom: 10px; }
+p { text-indent: 25px; margin-bottom: 10px; font-size: 14px; line-height: 1.5;}
+h2 { font-size: 30px; font-weight: bold; margin-top: 20px; margin-bottom: 15px;}
+h3 { margin-top: 0; margin-bottom: 0; font-weight: bold; font-size: 24px;}
+hr {
+    background-color: #d3d3d3;
+    border: medium none;
+    height: 1px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
 
-.top > td { height: 58px; border-top: 6px solid #092f44; padding-left: 10px; padding-right: 10px;}
+.table { display: table; vertical-align: top; width: 100%;}
+.table > .table-cell { vertical-align: top; height: 52px;}
+.table-cell { display: table-cell;}
+.font18 { font-size: 18px;}
+.font16 { font-size: 16px;}
+.mgb20 { margin-bottom: 20px;}
+.mgb10 { margin-bottom: 10px;}
+.aligncenter { text-align: center;}
+
+.btn {
+    background-color: #008fd5;
+    border: medium none;
+    -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; 
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4), 0 0 0 0px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    border-bottom: 2px solid #006799;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    height: 52px;
+    line-height: 50px;
+    padding: 0 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.15s ease 0s;
+    white-space: nowrap;
+}
+.btn.btn_green {
+    background-color: #7eae0b;
+    border-bottom: 2px solid #557605;
+}
+
+.top {  border-top: 6px solid #092f44; padding-left: 30px; padding-right: 30px;}
+.top td { height: 58px; vertical-align: middle;}
 .top_phone { color: #092f44; font-size: 24px; font-family: 'PT Sans', sans-serif; }
-.h1 > td { height: 72px; vertical-align: middle; padding-left: 10px; padding-right: 10px; background-color: #0073ac; }
-.h1 h1 { font-size: 22px; color: #fff; text-transform: uppercase; font-weight: 300;}
+
+.h1 { padding-left: 30px; padding-right: 30px; background-color: #0073ac; }
+.h1 td { height: 72px; vertical-align: middle; }
+.h1 h1 { font-size: 22px; color: #fff; text-transform: uppercase; font-weight: 300; margin-top: 0; margin-bottom: 0;}
 
 
-.main_top > td,
-.main_bottom > td { background-color: #ebebeb; padding-left: 10px; padding-right: 10px;}
+.manager  { padding-left: 30px; padding-right: 30px; padding-top: 15px; padding-bottom: 15px; background-color: #ebebeb; }
+.manager_img { padding-right: 20px; }
+.manager_greet { border-bottom: 1px solid #d3d3d3; }
+
+.main_txt  { padding-left: 30px; padding-right: 30px; background-color: #ebebeb; }
+.main_txt td { padding-bottom: 20px;}
+
+.about { padding-left: 30px; padding-right: 30px; background-color: #fff; padding-bottom: 20px;}
+.about_item { font-size: 16px; white-space: nowrap;}
+.about_item > img { display: inline-block; vertical-align: middle; margin-right: 10px; white-space: normal; margin-bottom: 20px;}
+.about_item > span { display: inline-block; vertical-align: middle; white-space: normal; margin-bottom: 20px; line-height: 1.2;}
 
 
+.result { padding-left: 30px; padding-right: 30px; background-image: url(http://nmark.ru/img/letters/result_back.jpg); background-attachment: scroll; background-position: left center; background-size: auto; background-color: #4a5d67; background-repeat: no-repeat;}
+.result h2 { color: #fff;}
+.result .btn { margin-bottom: 35px;}
 
 
+.warranty { padding-left: 30px; padding-right: 30px; background-color: #fff; padding-bottom: 20px;}
+.warranty_item { font-size: 16px; white-space: nowrap;}
+.warranty_item > img { display: inline-block; vertical-align: middle; margin-right: 10px; white-space: normal; margin-bottom: 20px;}
+.warranty_item > span { display: inline-block; vertical-align: middle; white-space: normal; margin-bottom: 20px; line-height: 1.2;}
+.warranty_item > span > strong { margin-bottom: 5px; font-size: 18px; display: block;}
 
 
+.reviews { padding-left: 30px; padding-right: 30px; background-image: url(http://nmark.ru/img/letters/reviews_back.jpg); background-attachment: scroll; background-position: left center; background-size: auto; background-color: #efefef; background-repeat: no-repeat;}
+.reviews .btn { margin-bottom: 35px;}
 
 
+.additional { padding-left: 30px; padding-right: 30px; background-color: #0073ac;}
+.additional h2 { color: #fff;}
 
-
-
-
-
-
-
+.actions_item { border: 1px dashed #80bbd8; padding-top: 9px; padding-right: 9px; padding-bottom: 9px; padding-left: 9px; margin-bottom: 40px;}
+.actions_item__wrap {  background-color: #ffffff; padding-top: 21px; padding-right: 20px; padding-bottom: 10px; padding-left: 20px;}
+.actions_item__title { font-family: 'PT Sans', sans-serif; font-size: 24px; line-height: 1.2; padding: 0 15px; text-align: center; font-weight: bold;}
+.actions_item__link { margin-top: 3px;}
+.actions_item__img { bottom: -10px; display: block; float: left; left: -20px; line-height: 1; position: relative;}
+.actions_item__announce { height: 150px; text-align: left; line-height: 1.37;}
 
 
 

@@ -23,14 +23,14 @@ gulp.task('sendEmail', function(){
   return gulp.src(['./example/html/email.html'])
     .pipe(emailBuilder({
       emailTest: {
-        email : process.env.GMAIL_USER,
+        email : 'shure348@gmail.com',
         subject : 'Email Subject',
         nodemailer: {
           transporter: {
             service: 'gmail',
             auth: {
-              user: process.env.GMAIL_USER,
-              pass: process.env.GMAIL_PASS
+              user: 'shure348',
+              pass: 'Philips348'
             }
           }
         }
